@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using ProjectName.Models;
+using AnimalShelter.Models;
 
-namespace ProjectName.Controllers
+namespace AnimalShelter.Controllers
 {
   public class HomeController : Controller
   {
