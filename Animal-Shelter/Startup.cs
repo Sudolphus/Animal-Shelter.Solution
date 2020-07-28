@@ -25,7 +25,7 @@ namespace AnimalShelter
       services.AddMvc();
 
       services.AddEntityFrameworkMySql()
-        .AddDBContext<AnimalShelterContext>(options => options
+        .AddDbContext<AnimalShelterContext>(options => options
         .UseMySql(Configuration["ConnectionStrings:DefaultConnection"]));
     }
 

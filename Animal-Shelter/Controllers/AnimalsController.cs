@@ -16,7 +16,8 @@ namespace AnimalShelter.Controllers
 
     public ActionResult Index()
     {
-      List<Animal> model = _db.Animals.ToList();
+      IEnumerable<Animal> model = _db.Animals.ToList().OrderBy(animal => animal.Name);
+      // IEnumerable<Animal> model = unsortedModel.OrderBy(animal => animal.DateOfAdmittance);
       return View(model);
     }
 
@@ -35,7 +36,7 @@ namespace AnimalShelter.Controllers
 
     public ActionResult Details(int id)
     {
-      Animal thisAnimal = _db.Animals.FirstOrDefault(animals => animals.AnimalsId == id);
+      Animal thisAnimal = _db.Animals.FirstOrDefault(animals => animals.AnimalId == id);
       return View(thisAnimal);
     }
   }
