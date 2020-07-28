@@ -1,18 +1,21 @@
-# _{Application Name}_
+# _Animal Shelter_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _An app that links a database for an animal shelter, 7.28.20_
 
-#### By _**Micheal Hansen**_
+#### By _**Micheal Hansen & Chris Yoon*_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This is an app that uses Entity to link a MySQL database that can track various animals at a shelter._
 
 ## Specifications
 
 | Spec | Input | Output |
 | :--- | :---: | ---: |
-
+|Program links a MySQL Database|N/A|N/A|
+|User can input animals into the database| "Animal" |Saved To Database|
+|Animals have Name, Breed, Date of Admittance, Gender fields| Animal={Violet, Cat, 4-1-2020, Female} | N/A|
+|User can view details on animals within the database| Violet | Violet, Cat, 4-1-2020, Female|
 
 ## Setup/Installation Requirements
 
@@ -34,7 +37,7 @@ Running the program:
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_None currently known_
 
 ## Support and contact details
 
@@ -44,25 +47,3 @@ _Please reach out through my GitHub account._
 
 * _VSCode_
 * _C# and .NET_
-
-### License
-
-Copyright (c) 2020 **_Micheal Hansen_**
-
-*Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:*
-
-*The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.*
-
-*THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.*
