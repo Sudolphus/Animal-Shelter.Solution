@@ -22,10 +22,11 @@ _This is an app that uses Entity to link a MySQL database that can track various
 Software Requirements
 1. .NET framework
 2. A code editor (Visual Studio Code, Atom, etc.)
+3. MySQL Server
 
 Acquire The Repo:
 1. Click the 'Clone or Download Button
-2. Alternately, Clone via Bash/GitBash: `git clone {repo}`
+2. Alternately, Clone via Bash/GitBash: `git clone https://github.com/Sudolphus/Animal-Shelter.Solution/`
 
 Editting the Code Base:
 1. Open the project in your code editor; with Bash, this is done by navigating to the project directory, then `code .`
@@ -34,6 +35,15 @@ Editting the Code Base:
 Running the program:
 1. To run the program, you'll need to compile the code: `dotnet build`. This will create a compiled application in the bin/ folder.
 2. Alternately, you can run the program directly with `dotnet run`.
+
+Database Installation:
+1. This program saves and loads from a MySQL database. The Structure has been exported to the `animal_shelter.sql` file in the Animal-Shelter folder, and should be imported to your local Server with Workbench or created manually.
+2. You will need to create an `Animal-Shelter\appsettings.json` file, with the following content:
+ `{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Port=3306;database=animal_shelter;uid=root;pwd={PASSWORD};"
+  }
+}`
 
 ## Known Bugs
 
