@@ -1,0 +1,23 @@
+@{
+  Layout = "_Layout";
+}
+
+@using AnimalShelter.Models;
+@model IEnumerable<AnimalShelter.Models.Animal>;
+
+<h1>Animals</h1>
+
+@if (@Model.Count() == 0)
+{
+  <h4>No Animals are listed at our shelter</h4>
+}
+<ol>
+  @foreach(Animal animal in Model)
+  {
+    <li>@Html.ActionLink($"{animal.Name}, {animal.Breed}", "Details", new { id = animal.AnimalId})</li>
+  }
+</ol>
+<p>@Html.ActionLink("Add new Animal", "Create")</p>
+<p>@Html.ActionLink("Sort By Name", "Index")</p>
+<p>@Html.ActionLink("Sort By Breed", "Index", new { sortByBreed = true })</p>
+<p>@Html.ActionLink("Sort By Date of Admittance", "Index", new { sortByDate = true })</p>
